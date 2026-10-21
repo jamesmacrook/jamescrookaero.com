@@ -2,3 +2,5 @@ HANDOFF.md
 CLAUDE.md
 .DS_Store
 Thumbs.db
+/IMG_*
+/*.JPG
