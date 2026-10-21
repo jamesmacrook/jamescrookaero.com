@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jamescrookaero.com/sitemap.xml
