@@ -41,81 +41,109 @@
     <h1>The cars, in order.</h1>
   </div>
 
-  <div class="sub" id="locost">
-    <div class="sub-head"><h3><span class="vnum">01</span>Locost</h3><span class="label">Eastbourne · built at 18</span></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/locost.jpg" width="1600" height="1200" alt="The finished Locost on the South Downs above Beachy Head" loading="lazy"><figcaption class="label"><span>Beachy Head</span></figcaption></figure>
-      <div class="copy"><p>Built from Ron Champion's book <i>Build Your Own Sports Car for as Little as £250</i>. Mostly self-built, with key components from Caterham, specialist suppliers and Ford.</p></div>
-    </article>
-  </div>
-
-  <div class="sub" id="formula-student">
-    <div class="sub-head"><h3><span class="vnum">02</span>Formula Student</h3><span class="label">Cambridge</span></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/tl-fs.jpg" width="1200" height="800" alt="Formula Student car number 82 on a cone course" loading="lazy"><figcaption class="label"><span>Car 82</span></figcaption></figure>
-      <div class="copy"><p>Student race car, alongside an engineering degree at Cambridge.</p></div>
-    </article>
-  </div>
-
-  <div class="sub" id="xjs">
-    <div class="sub-head"><h3><span class="vnum">03</span>Jaguar XJS race car</h3><span class="label">Classic Sports Car Club</span></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/cars/xjs.jpg" width="1400" height="933" alt="White Jaguar XJS race car, number 17, cornering on track" loading="lazy"><figcaption class="label"><span>Number 17</span></figcaption></figure>
-      <div class="copy"><p>Class winner at Snetterton, April 2013.</p></div>
-    </article>
-  </div>
-
-  <div class="sub" id="mini">
-    <div class="sub-head"><h3><span class="vnum">04</span>Mini</h3></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/cars/mini.jpg" width="1400" height="933" alt="Blue Mini parked on grass" loading="lazy"><figcaption class="label"><span>Mini</span></figcaption></figure>
-      <div class="copy"></div>
-    </article>
-  </div>
-
-  <div class="sub" id="lotus">
-    <div class="sub-head"><h3><span class="vnum">05</span>Lotus F1</h3><span class="label">Enstone</span></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/cars/lotus.jpg" width="1400" height="933" alt="Black and gold Lotus Formula 1 car in the Enstone reception" loading="lazy"><figcaption class="label"><span>Enstone</span></figcaption></figure>
-      <div class="copy"><p>Formula 1 aerodynamics with Lotus F1 Team: CFD and wind-tunnel development.</p></div>
-    </article>
-  </div>
-
-  <div class="sub" id="porsche-997">
-    <div class="sub-head"><h3><span class="vnum">06</span>Porsche 911 (997)</h3></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/cars/997.jpg" width="1400" height="933" alt="Grey Porsche 911 of the 997 generation on a country lane" loading="lazy"><figcaption class="label"><span>Porsche 997</span></figcaption></figure>
-      <div class="copy"></div>
-    </article>
-  </div>
-
-  <div class="sub" id="williams">
-    <div class="sub-head"><h3><span class="vnum">07</span>Williams F1</h3><span class="label">Grove</span></div>
-    <p class="vlead">Formula 1 aerodynamic development at Williams, across several eras of car.</p>
-    <div class="trio">
-      <figure class="photo"><img src="images/cars/williams-2019.jpg" width="1400" height="933" alt="James Crook sitting in a Martini-liveried Williams chassis at the factory" loading="lazy"><figcaption class="label">Martini livery · factory, Jan 2019</figcaption></figure>
-      <figure class="photo"><img src="images/cars/williams-monza.jpg" width="1400" height="933" alt="Williams team photo in the Monza pit lane with the 2019 car" loading="lazy"><figcaption class="label">2019 · Team photo, Monza</figcaption></figure>
-      <figure class="photo"><img src="images/cars/williams-2021.jpg" width="1400" height="933" alt="James Crook in the cockpit of the blue 2021 Williams" loading="lazy"><figcaption class="label">2021 · In the cockpit</figcaption></figure>
+  <div class="garage">
+    <nav class="garage-nav" aria-label="Cars">
+      <ol>
+        <li><a href="#locost"><span class="vnum">01</span>Locost</a></li>
+        <li><a href="#formula-student"><span class="vnum">02</span>Formula Student</a></li>
+        <li><a href="#xjs"><span class="vnum">03</span>Jaguar XJS race car</a></li>
+        <li><a href="#mini"><span class="vnum">04</span>Mini</a></li>
+        <li><a href="#lotus"><span class="vnum">05</span>Lotus F1</a></li>
+        <li><a href="#porsche-997"><span class="vnum">06</span>Porsche 911 (997)</a></li>
+        <li><a href="#williams"><span class="vnum">07</span>Williams F1</a></li>
+        <li><a href="#roadster"><span class="vnum">08</span>Tesla Roadster</a></li>
+        <li><a href="#porsche-912"><span class="vnum">09</span>Porsche 912</a></li>
+      </ol>
+    </nav>
+    <div class="garage-list">
+      <article class="car" id="locost">
+        <div class="pics"><figure class="photo"><img src="images/locost-frame.jpg" width="1600" height="1202" alt="The Locost's bare steel frame in the garage" loading="lazy"><figcaption class="label">The frame</figcaption></figure><figure class="photo"><img src="images/locost.jpg" width="1600" height="1200" alt="The finished Locost above Beachy Head" loading="lazy"><figcaption class="label">Finished</figcaption></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">01</span>Eastbourne · built at 18</div>
+          <h2>Locost</h2>
+          <p>Built from Ron Champion's book <i>Build Your Own Sports Car for as Little as £250</i>. Mostly self-built, with key components from Caterham, specialist suppliers and Ford.</p>
+        </div>
+      </article>
+      <article class="car" id="formula-student">
+        <div class="pics one"><figure class="photo"><img src="images/tl-fs.jpg" width="1200" height="800" alt="Formula Student car number 82 on a cone course" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">02</span>Cambridge</div>
+          <h2>Formula Student</h2>
+          <p>Student race car, alongside an engineering degree at Cambridge.</p>
+        </div>
+      </article>
+      <article class="car" id="xjs">
+        <div class="pics one"><figure class="photo"><img src="images/cars/xjs.jpg" width="1400" height="933" alt="White Jaguar XJS race car, number 17, cornering on track" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">03</span>Classic Sports Car Club</div>
+          <h2>Jaguar XJS race car</h2>
+          <p>Class winner at Snetterton, April 2013.</p>
+        </div>
+      </article>
+      <article class="car" id="mini">
+        <div class="pics one"><figure class="photo"><img src="images/cars/mini.jpg" width="1400" height="933" alt="Blue Mini parked on grass" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">04</span>First car after university</div>
+          <h2>Mini</h2>
+          <p>Trusty first car after university. Went through a few clutches…</p>
+        </div>
+      </article>
+      <article class="car" id="lotus">
+        <div class="pics one"><figure class="photo"><img src="images/cars/lotus.jpg" width="1400" height="933" alt="Black and gold Lotus Formula 1 car in the Enstone reception" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">05</span>Enstone</div>
+          <h2>Lotus F1</h2>
+          <p>Formula 1 aerodynamics with Lotus F1 Team: CFD and wind-tunnel development.</p>
+        </div>
+      </article>
+      <article class="car" id="porsche-997">
+        <div class="pics one"><figure class="photo"><img src="images/cars/997.jpg" width="1400" height="933" alt="Grey Porsche 911 Carrera S of the 997 generation on a country lane" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">06</span>Carrera S · manual</div>
+          <h2>Porsche 911 (997)</h2>
+          <p>First Porsche: a first-generation manual Carrera S. Survived a couple of laps of the Nürburgring. Only minor bore scoring…</p>
+        </div>
+      </article>
+      <article class="car" id="williams">
+        <div class="pics three"><figure class="photo"><img src="images/cars/williams-2019.jpg" width="1400" height="933" alt="James in a Martini-liveried Williams chassis at the factory" loading="lazy"><figcaption class="label">Martini · 2019</figcaption></figure><figure class="photo"><img src="images/cars/williams-monza.jpg" width="1400" height="933" alt="Williams team photo in the Monza pit lane" loading="lazy"><figcaption class="label">Monza · 2019</figcaption></figure><figure class="photo"><img src="images/cars/williams-2021.jpg" width="1400" height="933" alt="James in the cockpit of the 2021 Williams" loading="lazy"><figcaption class="label">Cockpit · 2021</figcaption></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">07</span>Grove</div>
+          <h2>Williams F1</h2>
+          <p>Formula 1 aerodynamic development at Williams, across several eras of car.</p>
+        </div>
+      </article>
+      <article class="car" id="roadster">
+        <div class="pics one"><figure class="photo"><img src="images/roadster-wing.jpg" width="1500" height="1000" alt="The new Tesla Roadster at night, doors up and rear wing deployed" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">08</span>California · 2022–2026</div>
+          <h2>Tesla Roadster</h2>
+          <p>Led aerodynamic development of the new Roadster, revealed on 15 October 2026. <span class="label">Image: Tesla</span></p>
+        </div>
+      </article>
+      <article class="car" id="porsche-912">
+        <div class="pics one"><figure class="photo"><img src="images/cars/912.jpg" width="1400" height="933" alt="Green 1967 Porsche 912 parked above a beach on the coast" loading="lazy"></figure></div>
+        <div class="car-copy">
+          <div class="label"><span class="vnum">09</span>1967 · Irish Green</div>
+          <h2>Porsche 912</h2>
+          <p>Latest addition: a 1967 912 in Irish Green, from Dodi Auto Sales.</p>
+        </div>
+      </article>
     </div>
-  </div>
-
-  <div class="sub" id="roadster">
-    <div class="sub-head"><h3><span class="vnum">08</span>Tesla Roadster</h3><span class="label">California · 2022–2026</span></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/roadster-wing.jpg" width="1500" height="1000" alt="The new Tesla Roadster at night, doors up and rear wing deployed" loading="lazy"><figcaption class="label"><span>Revealed 15 October 2026</span><span>Image: Tesla</span></figcaption></figure>
-      <div class="copy"><p>Led aerodynamic development of the new Roadster.</p></div>
-    </article>
-  </div>
-
-  <div class="sub" id="porsche-912">
-    <div class="sub-head"><h3><span class="vnum">09</span>Porsche 912</h3></div>
-    <article class="feature">
-      <figure class="photo"><img src="images/cars/912.jpg" width="1400" height="933" alt="Green Porsche 912 parked above a beach on the coast" loading="lazy"><figcaption class="label"><span>Porsche 912</span></figcaption></figure>
-      <div class="copy"></div>
-    </article>
   </div>
 </div></main>
 
 <div class="wrap"><footer><span class="label">© 2026 James Crook</span><a class="label" href="index.html">← Home</a></footer></div>
+<script>
+// Highlight the car in view in the side timeline
+(()=>{const links=[...document.querySelectorAll('.garage-nav a')];
+const map=new Map(links.map(a=>[document.querySelector(a.hash),a]));
+if(!('IntersectionObserver' in window))return;
+const nav=document.querySelector('.garage-nav ol');
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;
+ links.forEach(l=>l.classList.remove('on'));const a=map.get(e.target);a.classList.add('on');
+ if(nav.scrollWidth>nav.clientWidth)nav.scrollTo({left:a.offsetLeft-16,behavior:'smooth'});})},
+ {rootMargin:'-35% 0px -60% 0px'});
+map.forEach((a,el)=>el&&io.observe(el))})();
+</script>
 </body>
 </html>

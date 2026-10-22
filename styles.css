@@ -184,8 +184,34 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .feature-text .copy > ul,.feature-text .copy > .links{grid-column:2}
 
 /* vehicle-ography */
-.vnum{font:500 .85rem var(--mono);color:var(--accent);margin-right:14px;vertical-align:.45em}
-.vlead{font-size:1.05rem;max-width:60ch;margin-bottom:24px}
-.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.5vw,28px)}
-@media (max-width:820px){.trio,.feature-text .copy{grid-template-columns:minmax(0,1fr)}.feature-text .copy > p,.feature-text .copy > ul,.feature-text .copy > .links{grid-column:1;grid-row:auto}}
-.cv-hero + .sub{margin-top:clamp(40px,6vw,72px)}
+.vnum{font:500 .8rem var(--mono);color:var(--accent);margin-right:10px}
+.pics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.pics.one{grid-template-columns:minmax(0,1fr)}
+.pics.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.pics img{aspect-ratio:3/2;object-fit:cover}
+.garage{display:grid;grid-template-columns:210px minmax(0,1fr);gap:clamp(24px,4vw,64px);margin-top:clamp(32px,5vw,56px)}
+.garage-nav{position:sticky;top:96px;align-self:start}
+.garage-nav ol{list-style:none;margin:0;padding:0 0 0 20px;border-left:1.5px solid var(--line);display:grid}
+.garage-nav a{display:block;position:relative;padding:7px 0;color:var(--muted);text-decoration:none;font-size:.95rem;transition:color .2s}
+.garage-nav a::before{content:"";position:absolute;left:-26px;top:50%;width:9px;height:9px;margin-top:-5px;border-radius:50%;background:var(--bg);border:1.5px solid var(--muted);transition:background .2s,border-color .2s}
+.garage-nav a:hover{color:var(--ink)}
+.garage-nav a.on{color:var(--ink);font-weight:600}
+.garage-nav a.on::before{background:var(--accent);border-color:var(--accent)}
+.car{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(16px,3vw,36px);padding-block:clamp(22px,3vw,32px);border-top:1px solid var(--line);align-items:start;scroll-margin-top:96px}
+.car:first-child{border-top:0;padding-top:0}
+.car .pics.three{grid-column:1/-1}
+.car-copy{display:grid;gap:8px;align-content:start}
+.car-copy h2{font-size:clamp(1.3rem,2.2vw,1.7rem);font-weight:750}
+.car-copy p{color:var(--ink);line-height:1.55}
+.car-copy p .label{display:block;margin-top:8px}
+@media (max-width:820px){
+  .garage{grid-template-columns:minmax(0,1fr);gap:0}
+  .garage-nav{top:60px;z-index:5;background:var(--bg);margin-inline:-20px;padding:8px 20px;border-bottom:1px solid var(--line)}
+  .garage-nav ol{display:flex;gap:18px;border-left:0;padding:0;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+  .garage-nav ol::-webkit-scrollbar{display:none}
+  .garage-nav a{padding:4px 0}
+  .garage-nav a::before{display:none}
+  .garage-nav a.on{color:var(--accent)}
+  .car{grid-template-columns:minmax(0,1fr);scroll-margin-top:120px}
+  .car:first-child{padding-top:24px}
+}
