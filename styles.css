@@ -71,9 +71,15 @@ section,[id]{scroll-margin-top:84px}
 }
 
 /* sections */
-section{padding-block:clamp(56px,8vw,96px) 0}
-.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px 16px;flex-wrap:wrap;border-bottom:1.5px solid var(--ink);padding-bottom:12px;margin-bottom:32px}
-.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:750}
+section{padding-block:clamp(80px,11vw,140px) 0}
+.sec-head{display:flex;align-items:baseline;gap:8px 18px;flex-wrap:wrap;border-bottom:2.5px solid var(--ink);padding-bottom:14px;margin-bottom:clamp(32px,4vw,48px)}
+.sec-head h2{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800;text-transform:uppercase;letter-spacing:-.02em}
+.sec-head .idx{font:500 .9rem var(--mono);color:var(--accent);align-self:flex-start;padding-top:.5em}
+.sec-head > .label{margin-left:auto}
+/* subsections inside a main section */
+.sub + .sub{margin-top:clamp(56px,8vw,96px)}
+.sub-head{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:24px}
+.sub-head h3{font-size:clamp(1.35rem,2.4vw,1.75rem);font-weight:750}
 .prose{max-width:66ch;display:grid;gap:1em}
 .prose p{font-size:1.1rem}
 
@@ -85,9 +91,6 @@ section{padding-block:clamp(56px,8vw,96px) 0}
 .plate .ink{stroke:var(--ink)} .plate .acc{stroke:var(--accent)} .plate .hot{stroke:var(--hot)}
 .plate .fill-ink{fill:var(--ink)} .plate .fill-acc{fill:var(--accent)} .plate .fill-bg{fill:var(--bg)}
 .plate text{font:500 11px var(--mono);fill:var(--muted);letter-spacing:.06em}
-.more{margin-top:clamp(40px,6vw,72px);padding-top:clamp(28px,4vw,40px);border-top:1px solid var(--line)}
-.feature-sm{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
-.feature-sm .plate{aspect-ratio:16/9;align-content:center}
 .feature .copy{display:grid;gap:14px;min-width:0}
 .feature h3{font-size:clamp(1.45rem,2.6vw,2rem);font-weight:750}
 .links{display:flex;gap:6px 18px;flex-wrap:wrap;font-weight:500}
@@ -163,8 +166,7 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
   .ttw .prose{grid-column:1/-1;grid-row:auto}
   .ttw .tall{grid-column:1/-1;grid-row:auto}
   .ttw .tall img{aspect-ratio:4/3}
-  .feature,.feature-sm,.contact{grid-template-columns:minmax(0,1fr)}
-  .press li{grid-template-columns:minmax(0,1fr)}
+  .feature,  .press li{grid-template-columns:minmax(0,1fr)}
   .entry{grid-template-columns:minmax(0,1fr)}
   .line{grid-template-columns:minmax(0,1fr);gap:0;padding-top:0}
   .line::before{left:5px;right:auto;top:0;bottom:0;width:1.5px;height:auto}
