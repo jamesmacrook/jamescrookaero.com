@@ -31,7 +31,7 @@
   <header class="top">
     <a class="mark" href="#top">JAMES CROOK<span>.</span></a>
     <nav class="nav" aria-label="Main">
-      <a href="#work">Work</a><a href="#tune-to-wing">Tune to Wing</a><a href="#press">Press</a><a href="cv.html">CV</a><a href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#f1">F1</a><a href="#tune-to-wing">Tune to Wing</a><a href="#press">Press</a><a href="cv.html">CV</a><a href="#contact">Contact</a>
       <span class="icons">
         <a href="https://www.linkedin.com/in/james-crook-aero" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
         <a href="mailto:jamesmacrook@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.3L4.4 7H4v.6l8 5.6 8-5.6V7h-.4z"/></svg></a>
@@ -77,7 +77,7 @@
 </div></section>
 
 <section id="work"><div class="wrap">
-  <div class="sec-head"><h2>Selected work</h2><span class="label">Road cars, race cars, simulation</span></div>
+  <div class="sec-head"><h2>Selected work</h2><span class="label">Road cars and simulation</span></div>
 
   <article class="feature">
     <figure class="photo">
@@ -101,29 +101,40 @@
     <figure class="photo"><img src="images/roadster-ceiling.jpg" width="1260" height="790" alt="A car held upside down beneath a ceiling panel" loading="lazy"><figcaption class="label">Upside down. A normal day at Tesla.</figcaption></figure>
   </div>
 
-  <div class="cards">
-    <article class="card">
-      <div class="plate pic"><img src="images/williams-cockpit.jpg" width="640" height="480" alt="James Crook sitting in the cockpit of a Williams Formula 1 car" loading="lazy"></div>
-      <div class="label">Lotus F1 Team · Williams F1 · Oxfordshire</div>
-      <h3>Formula 1</h3>
-      <p>About ten years of race-car aerodynamics: CFD, wind-tunnel testing and track correlation, first at Lotus in Enstone and then at Williams in Grove.</p>
-    </article>
-
-    <article class="card">
-      <div class="plate"><svg viewBox="0 0 400 200" role="img" aria-label="Simulation mesh refining towards a car body">
+  <div class="more">
+    <article class="feature feature-sm">
+      <figure class="plate" style="margin:0"><svg viewBox="0 0 400 200" role="img" aria-label="Simulation mesh refining towards a car body">
         <g class="ink" fill="none" stroke-width=".8" opacity=".55">
           <path d="M20 40 H380 M20 70 H380 M20 100 H380 M20 130 H380 M20 160 H380 M50 20 V180 M110 20 V180 M170 20 V180 M230 20 V180 M290 20 V180 M350 20 V180"/>
           <path d="M140 85 H300 M140 115 H300 M200 60 V140 M260 60 V140 M140 55 V145"/>
         </g>
         <path class="fill-ink" d="M110 140 C130 108 180 92 240 94 C290 96 320 112 330 140Z"/>
         <text x="20" y="194">MESH → MODEL → ANSWER IN MINUTES</text>
-      </svg></div>
-      <div class="label">Navier AI · Startups</div>
+      </svg></figure>
+      <div class="copy">
+        <div class="label">Navier AI · Startups</div>
       <h3>AI-driven simulation, and early-stage hardware</h3>
       <p>At Navier AI, making aerodynamic simulation fast enough to sit inside the design loop. Outside it, hands-on aero for startups building aircraft, boats, bikes, reactors and cars.</p>
       <div class="links"><a href="https://navier.ai" target="_blank" rel="noopener">navier.ai ↗</a></div>
+      </div>
     </article>
   </div>
+</div></section>
+
+<section id="f1"><div class="wrap">
+  <div class="sec-head"><h2>Formula 1</h2><span class="label">Lotus F1 Team · Williams F1 · Oxfordshire</span></div>
+  <article class="feature">
+    <figure class="photo">
+      <img src="images/tl-williams.jpg" width="1200" height="800" alt="George Russell in the cockpit of the 2019 Williams FW42, checking the curved wing mirrors" loading="lazy">
+      <figcaption class="label"><span>George Russell tries the FW42's curved mirrors, 2019</span></figcaption>
+    </figure>
+    <div class="copy">
+      <h3>A decade of race-car aero</h3>
+      <p>About ten years of Formula 1 aerodynamics: CFD, wind-tunnel testing and track correlation, first at Lotus in Enstone and then at Williams in Grove.</p>
+      <p>One favourite: the curved wing mirrors on the 2019 Williams FW42. They turned heads at pre-season testing in Barcelona, and the FIA wasn't happy with them, so they were swapped out before the first race in Melbourne.</p>
+      <div class="links"><a href="https://www.autosport.com/f1/news/williams-modifying-front-suspension-and-mirrors-to-ensure-legality-5280436/5280436/" target="_blank" rel="noopener">Autosport: Williams modifying mirrors to ensure legality ↗</a></div>
+    </div>
+  </article>
 </div></section>
 
 <section id="tune-to-wing"><div class="wrap">
@@ -169,5 +180,17 @@
 </main>
 
 <div class="wrap"><footer><span class="label">© 2026 James Crook</span><a class="label" href="cv.html">Full CV →</a></footer></div>
+<script>
+// Highlight the header link for the section in view
+(()=>{const links=[...document.querySelectorAll('.nav a[href^="#"]')].filter(a=>a.hash.length>1);
+const map=new Map(links.map(a=>[document.querySelector(a.hash),a]).filter(([el])=>el));
+if(!('IntersectionObserver' in window)||!map.size)return;
+const vis=new Set();
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));
+ let cur=null;for(const el of map.keys())if(vis.has(el)){cur=el;break}
+ links.forEach(a=>a.removeAttribute('aria-current'));if(cur)map.get(cur).setAttribute('aria-current','true')},
+ {rootMargin:'-40% 0px -55% 0px'});
+map.forEach((a,el)=>io.observe(el))})();
+</script>
 </body>
 </html>
