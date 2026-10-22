@@ -26,7 +26,7 @@ a:hover{text-decoration-thickness:2px}
 
 .wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .label{font:500 .72rem/1.35 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-h1,h2,h3,.mark,.num b,.big{font-variation-settings:"wdth" 125}
+h1,h2,h3,.mark,.big{font-variation-settings:"wdth" 125}
 h1,h2,h3{font-family:var(--display);font-stretch:125%;text-wrap:balance;margin:0;line-height:1.02;letter-spacing:-.015em}
 p{margin:0}
 
@@ -71,12 +71,6 @@ section{padding-block:clamp(56px,8vw,96px) 0}
 .prose{max-width:66ch;display:grid;gap:1em}
 .prose p{font-size:1.1rem}
 
-/* numbers */
-.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line);margin-top:40px}
-.num{padding:18px 18px 4px 0;border-right:1px solid var(--line);display:grid;gap:6px;align-content:start}
-.num:last-child{border-right:0}
-.num b{font:800 clamp(2rem,4.4vw,3.2rem)/1 var(--display);font-stretch:125%;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-.num b small{font-size:.45em;letter-spacing:0;margin-left:.15em}
 
 /* feature */
 .feature{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);align-items:start}
@@ -162,8 +156,6 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
   .ttw .tall{grid-column:1/-1;grid-row:auto}
   .ttw .tall img{aspect-ratio:4/3}
   .feature,.contact,.cards{grid-template-columns:minmax(0,1fr)}
-  .nums{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .num:nth-child(2){border-right:0}
   .press li{grid-template-columns:minmax(0,1fr)}
   .entry{grid-template-columns:minmax(0,1fr)}
   .line{grid-template-columns:minmax(0,1fr);gap:0;padding-top:0}
