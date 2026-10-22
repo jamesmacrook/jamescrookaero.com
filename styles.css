@@ -46,7 +46,7 @@ section,[id]{scroll-margin-top:84px}
 
 /* hero */
 .hero{padding-block:clamp(28px,6vw,64px) 0;display:grid;gap:22px}
-.hero h1{font-size:clamp(3.2rem,11vw,8.6rem);font-weight:800;letter-spacing:-.035em;line-height:.9}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;letter-spacing:-.03em;line-height:.95}
 .hero .lede{max-width:42ch;font-size:clamp(1.15rem,2.1vw,1.45rem);line-height:1.45}
 .hero .lede b{font-weight:600}
 .lineup{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,2vw,28px);margin-top:clamp(28px,5vw,56px);padding-bottom:14px;border-bottom:1.5px solid var(--ink);text-decoration:none;color:inherit}
@@ -156,6 +156,7 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .ttw .prose{grid-column:1;grid-row:1/3;align-content:start}
 .ttw .tall{grid-column:2;grid-row:1/3}
 .ttw .tall img{aspect-ratio:3/4;object-fit:cover}
+.ttw-crowd{margin-bottom:clamp(20px,3vw,32px)}
 .press .ev{font-weight:500;font-size:1.08rem}
 
 @media (max-width:860px){
