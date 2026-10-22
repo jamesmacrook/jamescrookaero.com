@@ -77,7 +77,8 @@ section{padding-block:clamp(80px,11vw,140px) 0}
 .sec-head .idx{grid-row:1;grid-column:1;font:500 .9rem var(--mono);color:var(--accent);margin-right:14px}
 .sec-head > .label{grid-row:1;grid-column:2;justify-self:start}
 /* subsections inside a main section */
-.sub + .sub{margin-top:clamp(88px,12vw,150px)}
+.sub + .sub{margin-top:clamp(72px,10vw,128px);padding-top:clamp(64px,8vw,104px);border-top:1.5px solid var(--ink);position:relative}
+.sub + .sub::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--accent)}
 .sub-head{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:32px}
 .sub-head h3{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:750}
 .prose{max-width:66ch;display:grid;gap:1em}
