@@ -111,13 +111,11 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 /* CV */
 .cv-hero{padding-block:clamp(28px,5vw,56px) 8px;display:grid;gap:16px}
 .cv-hero h1{font-size:clamp(2.6rem,7vw,5rem);font-weight:800}
-.line{list-style:none;margin:0;padding-left:0;position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:36px;padding-top:10px}
-.line::before{content:"";position:absolute;left:0;right:0;top:118px;height:1.5px;background:var(--ink)}
-.stop{display:grid;grid-template-rows:110px auto;gap:24px;min-width:0;position:relative}
-.stop svg{width:100%;height:110px;overflow:visible}
+.line{list-style:none;margin:0;padding-left:0;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:36px;padding-top:0}
+.line::before{content:"";position:absolute;left:0;right:0;top:5px;height:1.5px;background:var(--ink)}
+.stop{display:grid;min-width:0;position:relative;padding-top:28px}
 .stop>div{min-width:0}
-.stop svg .ink{stroke:var(--ink)} .stop svg .acc{stroke:var(--accent)} .stop svg .fill-ink{fill:var(--ink)} .stop svg .fill-bg{fill:var(--bg)} .stop svg .fill-acc{fill:var(--accent)}
-.stop .dot{display:block;position:absolute;left:0;top:102px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+.stop .dot{display:block;position:absolute;left:0;top:0;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
 .stop:last-child .dot{background:var(--accent);border-color:var(--accent)}
 .stop h3{font-size:1.15rem;font-weight:750;font-stretch:112%}
 .stop p{font-size:.9rem;color:var(--muted);line-height:1.45}
@@ -164,7 +162,6 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
   .entry{grid-template-columns:minmax(0,1fr)}
   .line{grid-template-columns:minmax(0,1fr);gap:0;padding-top:0}
   .line::before{left:5px;right:auto;top:0;bottom:0;width:1.5px;height:auto}
-  .stop{grid-template-columns:110px minmax(0,1fr);grid-template-rows:auto;gap:16px;align-items:center;padding:14px 0 14px 24px;position:relative}
-  .stop svg{height:56px}
-  .stop .dot{top:50%;margin-top:-6px}
+  .stop{padding:14px 0 14px 24px}
+  .stop .dot{top:19px}
 }
