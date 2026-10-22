@@ -215,3 +215,10 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 }
 .cars-page .cv-hero h1{font-size:clamp(2rem,5vw,3.4rem)}
 .cars-page .garage{margin-top:clamp(20px,3vw,32px)}
+.car .pics img{cursor:zoom-in;transition:opacity .2s}
+.car .pics img:hover{opacity:.85}
+.lightbox{border:0;padding:0;background:transparent;max-width:min(92vw,1400px);max-height:92vh;overflow:visible;cursor:zoom-out}
+.lightbox::backdrop{background:rgba(10,14,13,.88)}
+.lightbox img{display:block;max-width:min(92vw,1400px);max-height:84vh;width:auto;height:auto;margin:0 auto}
+.lightbox p{color:#e9ecea;text-align:center;margin-top:10px}
+.lightbox button{position:absolute;top:-14px;right:-14px;width:36px;height:36px;border-radius:50%;border:0;background:#e9ecea;color:#111;font-size:22px;line-height:1;cursor:pointer}
