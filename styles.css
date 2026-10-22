@@ -136,6 +136,9 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 /* photos */
 .photo{margin:0;display:grid;gap:10px;min-width:0;align-content:start}
 .photo img{display:block;width:100%;height:auto;background:var(--surface)}
+.photo > a{display:block;overflow:hidden}
+.photo > a img{transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .2s}
+.photo > a:hover img{transform:scale(1.02);opacity:.92}
 .photo figcaption{display:flex;justify-content:space-between;gap:4px 12px;flex-wrap:wrap}
 .hero-photo{margin-top:clamp(20px,3vw,32px)}
 .hero-photo img{aspect-ratio:2/1;object-fit:cover;object-position:50% 62%}
