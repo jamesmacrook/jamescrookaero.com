@@ -230,3 +230,5 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .play{position:relative}
 .play::after{content:"";position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(0,0,0,.6) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M8 5v14l11-7z'/%3E%3C/svg%3E") center/30px no-repeat;transition:transform .2s,background-color .2s}
 .play:hover::after{transform:scale(1.08);background-color:rgba(0,0,0,.8)}
+.car-copy .yr{color:var(--ink);font-weight:600;margin-right:10px}
+.garage-nav .nyr{font:400 .72rem var(--mono);color:var(--muted);margin-left:8px}
