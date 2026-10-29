@@ -226,7 +226,7 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .play:hover::after{transform:scale(1.08);background-color:rgba(0,0,0,.8)}
 .car-copy .yr{color:var(--ink);font-weight:600;margin-right:10px}
 .garage-nav .nyr{font:400 .72rem var(--mono);color:var(--muted);margin-left:8px}
-.car-copy .fw{color:var(--accent);letter-spacing:.06em}
+.car-copy .fw{color:var(--muted);letter-spacing:.06em}
 
 /* Tune to Wing page */
 .ttw-page .lede{max-width:52ch;font-size:clamp(1.1rem,1.9vw,1.3rem);line-height:1.5}
