@@ -233,7 +233,10 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .ttw-page .lede{max-width:52ch;font-size:clamp(1.1rem,1.9vw,1.3rem);line-height:1.5}
 .dl{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .dl li{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;padding-block:12px;border-bottom:1px solid var(--line)}
-.dl-name{font-weight:600}
+.dl-name{font-weight:600;display:inline-flex;align-items:center;gap:10px}
+.sw{display:inline-block;width:22px;height:5px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.sw-main{background:#f0f}
+.sw-flap{background:#0ff}
 .dl-files{display:flex;gap:8px;flex-wrap:wrap}
 .dl-files a{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border:1px solid var(--line);border-radius:2px;text-decoration:none}
 .dl-files a{border-color:var(--accent);color:var(--accent)}
