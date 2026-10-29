@@ -68,7 +68,7 @@
     a.addEventListener('click', e => {
       e.preventDefault();
       const f = document.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.yt + '?autoplay=1&rel=0';
+      f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.yt + '?autoplay=1&rel=0' + (a.dataset.start ? '&start=' + a.dataset.start : '');
       f.title = a.getAttribute('aria-label') || 'YouTube video';
       f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
       f.allowFullscreen = true;
