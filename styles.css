@@ -152,6 +152,7 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .about .photo img{aspect-ratio:4/5;object-fit:cover;object-position:52% 50%}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.5vw,28px);margin-top:clamp(28px,4vw,44px)}
 .gallery img{aspect-ratio:16/9;object-fit:cover}
+.inline-video{display:block;width:100%;aspect-ratio:16/9;height:auto;border:0;background:#000}
 .gallery img.fit{object-fit:contain;background:#e3e3e3}
 .ttw-crowd{margin-bottom:clamp(20px,3vw,32px)}
 .press .ev{font-weight:500;font-size:1.08rem}

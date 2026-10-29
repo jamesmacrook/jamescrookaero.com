@@ -63,6 +63,27 @@
     img.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } });
   });
 
+  // Start a YouTube video in place, muted, once it has been on screen for a few seconds
+  document.querySelectorAll('a[data-yt][data-autoplay]').forEach(a => {
+    if (calm || !('IntersectionObserver' in window)) return;
+    let timer;
+    const obs = new IntersectionObserver(([en]) => {
+      clearTimeout(timer);
+      if (!en.isIntersecting) return;
+      timer = setTimeout(() => {
+        obs.disconnect();
+        const f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.yt + '?autoplay=1&mute=1&rel=0&playsinline=1';
+        f.title = a.getAttribute('aria-label') || 'YouTube video';
+        f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+        f.allowFullscreen = true;
+        f.className = 'inline-video';
+        a.replaceWith(f);
+      }, (+a.dataset.autoplay || 5) * 1000);
+    }, { threshold: 0.5 });
+    obs.observe(a);
+  });
+
   // Home: play a YouTube video in the pop-up
   document.querySelectorAll('a[data-yt]').forEach(a => {
     a.addEventListener('click', e => {
