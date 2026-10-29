@@ -152,20 +152,12 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .about .photo img{aspect-ratio:4/5;object-fit:cover;object-position:52% 50%}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.5vw,28px);margin-top:clamp(28px,4vw,44px)}
 .gallery img{aspect-ratio:3/2;object-fit:cover}
-.ttw{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,4fr) minmax(0,4fr);grid-template-rows:auto auto;gap:clamp(20px,3vw,32px)}
-.ttw .prose{grid-column:1;grid-row:1/3;align-content:start}
-.ttw .tall{grid-column:2;grid-row:1/3}
-.ttw .tall img{aspect-ratio:3/4;object-fit:cover}
 .ttw-crowd{margin-bottom:clamp(20px,3vw,32px)}
 .press .ev{font-weight:500;font-size:1.08rem}
 
 @media (max-width:860px){
   .about,.gallery{grid-template-columns:minmax(0,1fr)}
   .about .photo{max-width:420px}
-  .ttw{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:none}
-  .ttw .prose{grid-column:1/-1;grid-row:auto}
-  .ttw .tall{grid-column:1/-1;grid-row:auto}
-  .ttw .tall img{aspect-ratio:4/3}
   .feature,  .press li{grid-template-columns:minmax(0,1fr)}
   .entry{grid-template-columns:minmax(0,1fr)}
   .line{grid-template-columns:minmax(0,1fr);gap:0;padding-top:0}
@@ -245,3 +237,6 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .dl-files a{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border:1px solid var(--line);border-radius:2px;text-decoration:none}
 .dl-files a{border-color:var(--accent);color:var(--accent)}
 .dl-files a:hover{background:var(--accent);color:var(--bg)}
+
+/* Roadster clip in the Tesla section */
+.clip{display:block;width:100%;height:auto;aspect-ratio:16/9;background:var(--surface)}

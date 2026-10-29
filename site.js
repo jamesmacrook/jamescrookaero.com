@@ -34,6 +34,17 @@
     cars.forEach((a, el) => el && spy.observe(el));
   }
 
+  // Home: play the Roadster clip, muted, while it is on screen
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video.clip').forEach(v => {
+    if (calm || !io) return;
+    v.removeAttribute('controls');
+    new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) v.play().catch(() => v.setAttribute('controls', ''));
+      else v.pause();
+    }, { threshold: 0.5 }).observe(v);
+  });
+
   // Shared pop-up for photos and video
   const box = document.querySelector('.lightbox');
   if (!box || !box.showModal) return;
