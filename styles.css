@@ -151,8 +151,8 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:clamp(24px,5vw,64px);align-items:start}
 .about .photo img{aspect-ratio:4/5;object-fit:cover;object-position:52% 50%}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.5vw,28px);margin-top:clamp(28px,4vw,44px)}
-.gallery img{aspect-ratio:3/2;object-fit:cover}
-.gallery .soon{aspect-ratio:3/2}
+.gallery img{aspect-ratio:16/9;object-fit:cover}
+.gallery img.fit{object-fit:contain;background:#e3e3e3}
 .ttw-crowd{margin-bottom:clamp(20px,3vw,32px)}
 .press .ev{font-weight:500;font-size:1.08rem}
 
@@ -230,7 +230,6 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 
 /* Tune to Wing page */
 .ttw-page .lede{max-width:52ch;font-size:clamp(1.1rem,1.9vw,1.3rem);line-height:1.5}
-.soon{aspect-ratio:16/9;background:var(--surface);border:1px dashed var(--line);display:grid;place-items:center}
 .dl{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .dl li{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;padding-block:12px;border-bottom:1px solid var(--line)}
 .dl-name{font-weight:600}
@@ -238,7 +237,6 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .dl-files a{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border:1px solid var(--line);border-radius:2px;text-decoration:none}
 .dl-files a{border-color:var(--accent);color:var(--accent)}
 .dl-files a:hover{background:var(--accent);color:var(--bg)}
-.dl-files .soon-tag{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border:1px solid var(--line);border-radius:2px;color:var(--muted)}
 .feature + .feature{margin-top:clamp(40px,6vw,72px)}
 
 /* Roadster clip in the Tesla section */

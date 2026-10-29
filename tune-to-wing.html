@@ -41,7 +41,7 @@
     <div class="label">Formula SAE aerodynamics series</div>
     <h1>Tune to Wing</h1>
     <p class="lede">Race-car aerodynamics for Formula SAE and Formula Student teams, taught the way an F1 aero department works: design a wing from first principles, read a pressure plot, and break down a CFD result.</p>
-    <div class="links"><a href="#watch">Watch ↓</a><a href="#rear-wing">Download the rear wing ↓</a><a href="https://www.youtube.com/@JamesCrookAero" target="_blank" rel="noopener">YouTube channel ↗</a></div>
+    <div class="links"><a href="#watch">Watch ↓</a><a href="#downloads">Downloads ↓</a><a href="https://www.youtube.com/@JamesCrookAero" target="_blank" rel="noopener">YouTube channel ↗</a></div>
     <figure class="photo ttw-spin">
       <video class="clip spin" src="videos/ttw-car-streamlines.mp4" poster="images/ttw-car-streamlines.jpg" width="990" height="560" muted loop playsinline preload="none" controls aria-label="A Formula SAE car turning on the spot, with CFD streamlines flowing around it"></video>
       <figcaption class="label"><span>Streamlines around a Formula SAE car</span><span>From Vol. 02 · Front wings</span></figcaption>
@@ -50,42 +50,28 @@
 </div>
 
 <section id="watch"><div class="wrap">
-  <div class="sec-head"><span class="idx">01</span><h2>Watch</h2><span class="label">On YouTube</span></div>
+  <div class="sec-head"><span class="idx">01</span><h2>Watch</h2><span class="label">On YouTube · rear wing CFD</span></div>
   <div class="gallery">
-    <figure class="photo">
-      <div class="soon" role="img" aria-label="Rear wing video coming soon"><span class="label">Rear wing video · coming soon</span></div>
-      <figcaption class="label"><span>Designing a three-element rear wing</span></figcaption>
-    </figure>
     <figure class="photo"><a class="play" href="https://www.youtube.com/watch?v=iVCHYiKXSA4" target="_blank" rel="noopener" data-yt="iVCHYiKXSA4" data-caption="Tune to Wing · Ep. 1: Reading Cp like an F1 engineer" aria-label="Play Tune to Wing Ep. 1"><img src="images/tune-to-wing-cp.jpg" width="1280" height="720" alt="Tune to Wing, volume 1: Read your Cp" loading="lazy"></a><figcaption class="label"><span>Ep. 01 · Reading Cp like an F1 engineer</span></figcaption></figure>
+    <figure class="photo" id="shear-stress"><img class="fit" src="images/ttw-shear-stress.png" width="626" height="592" alt="CFD wall shear stress on the rear wing with surface streamlines: red where shear is high, blue where it falls towards zero" loading="lazy"><figcaption class="label"><span>Rear wing · wall shear stress</span><span>Red: attached · Blue: close to separating</span></figcaption></figure>
   </div>
 </div></section>
 
-<section id="rear-wing"><div class="wrap">
-  <div class="sec-head"><span class="idx">02</span><h2>Rear wing</h2><span class="label">Free download · three elements</span></div>
-  <div class="feature">
+<section id="downloads"><div class="wrap">
+  <div class="sec-head"><span class="idx">02</span><h2>Downloads</h2><span class="label">Free · STEP profiles</span></div>
+  <div class="feature" id="rear-wing">
     <figure class="photo">
       <img src="images/ttw-rw-cad.png" width="928" height="684" alt="CAD of the three-element rear wing and endplate, with the mainplane and two flap profiles outlined" loading="lazy">
       <figcaption class="label"><span>Rear wing · CAD</span></figcaption>
     </figure>
     <div class="copy">
-      <p>A three-element rear wing, a mainplane and two flaps, for you to take into your own CAD and CFD, build on, and tune.</p>
+      <h3>Rear wing</h3>
+      <p>A three-element rear wing. Here are the mainplane and first flap to take into your own CAD and CFD. The top flap is yours to work out.</p>
       <ul class="dl">
         <li><span class="dl-name">Mainplane</span><span class="dl-files"><a href="downloads/JC-RW1-MAINPLANE.stp" download>STEP ↓</a></span></li>
-        <li><span class="dl-name">Flap 1</span><span class="dl-files"><a href="downloads/JC-RW1-FLAP.stp" download>STEP ↓</a></span></li>
-        <li><span class="dl-name">Flap 2</span><span class="dl-files"><span class="soon-tag">STEP · soon</span></span></li>
+        <li><span class="dl-name">Flap</span><span class="dl-files"><a href="downloads/JC-RW1-FLAP.stp" download>STEP ↓</a></span></li>
       </ul>
       <p class="label">STEP profile curves, in mm, ready for any CAD package</p>
-    </div>
-  </div>
-  <div class="feature" id="shear-stress">
-    <figure class="photo">
-      <img src="images/ttw-shear-stress.png" width="626" height="592" alt="CFD wall shear stress on the rear wing with surface streamlines: red where shear is high, blue where it falls towards zero" loading="lazy">
-      <figcaption class="label"><span>Rear wing · wall shear stress</span></figcaption>
-    </figure>
-    <div class="copy">
-      <h3>Shear stress</h3>
-      <p>Wall shear stress shows how hard the air is scrubbing along the wing surface. High values mean healthy, attached flow. Where it drops towards zero, the flow is running out of energy and getting ready to separate.</p>
-      <p>On a three-element wing, look at the back of each flap's suction side, especially the top flap, and at the tips by the endplate. That's where separation starts first as you add flap angle.</p>
     </div>
   </div>
 </div></section>
