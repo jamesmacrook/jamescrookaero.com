@@ -241,6 +241,8 @@ footer{margin-top:clamp(64px,9vw,110px);border-top:1px solid var(--line);padding
 .dl-files a{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border:1px solid var(--line);border-radius:2px;text-decoration:none}
 .dl-files a{border-color:var(--accent);color:var(--accent)}
 .dl-files a:hover{background:var(--accent);color:var(--bg)}
+.dl-terms{margin-top:14px;font-size:.82rem;line-height:1.5;color:var(--muted)}
+.dl-terms a{color:inherit}
 .feature + .feature{margin-top:clamp(40px,6vw,72px)}
 
 /* Roadster clip in the Tesla section */
